@@ -614,10 +614,11 @@
         border-bottom-right-radius: inherit;
       }
       #image07 .frame {
-        width: 3.875rem;
+        width: 2.875rem;
         transition: none;
       }
       #image07 .frame img {
+        padding-left: 10px;
         transition: none;
       }
       #image06:not(:first-child) {
@@ -1301,10 +1302,11 @@
         align-items: center;
         justify-content: flex-start;
         background-color: #4d4168;
-        border-radius: 0rem;
+        border-radius: 0;
+        border-collapse: collapse;
       }
       #container02 > .wrapper > .inner {
-        --gutters: 0.5rem;
+       
         --padding-horizontal: 0rem;
         --padding-vertical: 0rem;
         padding: var(--padding-vertical) var(--padding-horizontal);
@@ -2863,7 +2865,7 @@
           font-size: 11pt;
         }
       }
-      @media (max-width: 736px) {
+      @media (max-width: 850px) {
         html {
           font-size: 11pt;
         }
@@ -2890,14 +2892,7 @@
           font-size: 1em;
           line-height: 1.75;
         }
-        #text02 {
-          padding-left: calc(1.125rem * var(--indent-left));
-          padding-right: calc(1.125rem * var(--indent-right));
-          letter-spacing: 0.021875rem;
-          width: calc(100% + 0.021875rem);
-          font-size: 2em;
-          line-height: 2;
-        }
+     
         #text12 {
           letter-spacing: 0.021875rem;
           width: calc(100% + 0.021875rem);
@@ -2943,9 +2938,6 @@
           width: calc(100% + 0.021875rem);
           font-size: 2em;
           line-height: 1.75;
-        }
-        #image07 .frame {
-          width: 3.875rem;
         }
         #image06:not(:first-child) {
           margin-top: 0rem !important;
@@ -3409,122 +3401,7 @@
           position: relative;
           width: auto;
         }
-        #container02 > .wrapper > .inner {
-          --gutters: 0.5rem;
-          --padding-horizontal: 0rem;
-          --padding-vertical: 0rem;
-        }
-        #container02.columns > .wrapper > .inner {
-          flex-direction: column !important;
-          flex-wrap: nowrap !important;
-        }
-        #container02.columns > .wrapper > .inner > span {
-          height: 0;
-          margin-top: calc(var(--gutters) * -1);
-          pointer-events: none;
-          visibility: hidden;
-        }
-        #container02.columns > .wrapper > .inner > *:first-child {
-          margin-left: 0 !important;
-          padding-top: 0 !important;
-        }
-        #container02.columns > .wrapper > .inner > * {
-          padding: calc(var(--gutters) * 0.5) 0 !important;
-        }
-        #container02.columns > .wrapper > .inner > *:last-child {
-          padding-bottom: 0 !important;
-        }
-        #container02.columns > .wrapper > .inner > div > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #container02.columns > .wrapper > .inner > div:first-of-type > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #container02.columns > .wrapper > .inner > div:last-of-type > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #container02.columns > .wrapper > .inner > div > .full:first-child {
-          margin-top: calc(var(--gutters) * -0.5) !important;
-        }
-        #container02.columns > .wrapper > .inner > div > .full:last-child {
-          margin-bottom: calc(var(--gutters) * -0.5) !important;
-        }
-        #container02.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:first-child {
-          margin-top: calc(var(--padding-vertical) * -1) !important;
-        }
-        #container02.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:last-child {
-          margin-bottom: calc(var(--padding-vertical) * -1) !important;
-        }
-        #container02.columns > .wrapper > .inner > div:first-of-type,
-        #container02.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:first-child {
-          border-top-left-radius: inherit;
-          border-top-right-radius: inherit;
-        }
-        #container02.columns > .wrapper > .inner > div:last-of-type,
-        #container02.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:last-child {
-          border-bottom-left-radius: inherit;
-          border-bottom-right-radius: inherit;
-        }
-        #container02.columns > .wrapper > .inner > div:first-of-type,
-        #container02.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:last-child {
-          border-bottom-left-radius: 0 !important;
-        }
-        #container02.columns > .wrapper > .inner > div:last-of-type,
-        #container02.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:first-child {
-          border-top-right-radius: 0 !important;
-        }
-        #container02.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child {
-          height: auto;
-        }
-        #container02.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child
-          > * {
-          height: auto;
-          position: relative;
-          width: auto;
-        }
-        #container02 > .wrapper > .inner > :nth-child(1) {
-          min-height: 100% !important;
-          width: 100% !important;
-        }
-        #container02 > .wrapper > .inner > :nth-child(2) {
-          min-height: 100% !important;
-          width: 100% !important;
-        }
+       
         #container04:not(:first-child) {
           margin-top: 0rem !important;
         }
@@ -4726,11 +4603,7 @@
           --padding-horizontal: 0.28125rem;
           --padding-vertical: 0.1875rem;
         }
-        #container02 > .wrapper > .inner {
-          --gutters: 0.375rem;
-          --padding-horizontal: 0rem;
-          --padding-vertical: 0rem;
-        }
+   
         #container04 > .wrapper > .inner {
           --gutters: 0.375rem;
           --padding-horizontal: 1.5rem;
@@ -4836,7 +4709,7 @@
     margin-left: -36px;
     margin-top: -36px;
     position: absolute;
-    background: url('//i.imgur.com/TxzC70f.png') no-repeat;
+    background: url(../assets/images/playpixel.png) no-repeat;
     cursor: pointer;
   }
       
@@ -4915,7 +4788,7 @@
             <div class="wrapper">
               <div class="inner" data-reorder="1,0">
                 <div><h1 id="text03">Hola.</h1></div>
-                <div>
+                <div class="responsive">
                   <ul id="buttons01" class="buttons">
                     <li>
                       <a href="https://www.instagram.com/121.mp4/" target="_blank" class="button n01"
@@ -4960,15 +4833,16 @@
           </div>
           <div id="container02" class="container columns">
             <div class="wrapper">
-              <div class="inner" data-reorder="1,0">
-                <div class="responsive"><h2 id="text02">Edición en Youtube</h2></div>
-                <div>
+              <div class="inner">
+                <div class="responsive">
                   <div id="image07" class="image">
                     <span class="frame"
-                      ><img src="assets/images/image07.gif?v=5ce7aab5" class="responsive" alt=""
+                      ><img src="assets/images/image07.gif?v=5ce7aab5"  alt=""
                     /></span>
                   </div>
                 </div>
+                <div class="responsive"><h2 id="text02">Edición en Youtube</h2></div>
+                
               </div>
             </div>
           </div>
@@ -5066,8 +4940,7 @@
           </div>
           <div id="container02" class="container columns">
             <div class="wrapper">
-              <div class="inner" data-reorder="1,0">
-                <div><h2 id="text02">Cursos educativos</h2></div>
+              <div class="inner" >
                 <div>
                   <div id="image07" class="image">
                     <span class="frame"
@@ -5075,6 +4948,8 @@
                     /></span>
                   </div>
                 </div>
+                <div><h2 id="text02">Cursos educativos</h2></div>
+                
               </div>
             </div>
           </div>
@@ -5117,8 +4992,7 @@
           </div>
           <div id="container02" class="container columns">
             <div class="wrapper">
-              <div class="inner" data-reorder="1,0">
-                <div><h2 id="text02">Videoclip</h2></div>
+              <div class="inner">
                 <div>
                   <div id="image07" class="image">
                     <span class="frame"
@@ -5126,6 +5000,8 @@
                     /></span>
                   </div>
                 </div>
+                <div><h2 id="text02">Videoclip</h2></div>
+                
               </div>
             </div>
           </div>
@@ -5153,8 +5029,33 @@
           </div>
           <div id="container02" class="container columns">
             <div class="wrapper">
-              <div class="inner" data-reorder="1,0">
-                <div><h2 id="text02">Animaciones y Motion Graphics</h2></div>
+              <div class="inner">
+                <div>
+                  <div id="image07" class="image">
+                    <span class="frame"
+                      ><img src="assets/images/image10.gif?v=5ce7aab5" alt=""
+                    /></span>
+                  </div>
+                </div>
+                <div><h2 id="text02">Cortometraje</h2></div>
+                
+              </div>
+            </div>
+          </div>
+          <div id="container09" class="container columns">
+            <div class="wrapper">
+              <div class="inner">
+                <div>
+                  <div id="video01" class="video">
+                    <div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/805067775?h=ec7112d68d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Corte de Fieltro (2023)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="container02" class="container columns">
+            <div class="wrapper">
+              <div class="inner">
                 <div>
                   <div id="image07" class="image">
                     <span class="frame"
@@ -5162,6 +5063,17 @@
                     /></span>
                   </div>
                 </div>
+                <div><h2 id="text02">Gráficos</h2></div>
+                
+              </div>
+            </div>
+          </div>
+          <div id="container06" class="container default">
+            <div class="wrapper">
+              <div class="inner">
+                <p id="text11">
+                  Motion graphics y pequeñas animaciones.
+                </p>
               </div>
             </div>
           </div>
@@ -5189,8 +5101,7 @@
           </div>
           <div id="container02" class="container columns">
             <div class="wrapper">
-              <div class="inner" data-reorder="1,0">
-                <div><h2 id="text02">Publicidad</h2></div>
+              <div class="inner">
                 <div>
                   <div id="image07" class="image">
                     <span class="frame"
@@ -5198,6 +5109,8 @@
                     /></span>
                   </div>
                 </div>
+                <div><h2 id="text02">Publicidad</h2></div>
+                
               </div>
             </div>
           </div>
@@ -5217,8 +5130,7 @@
           </div>
           <div id="container02" class="container columns">
             <div class="wrapper">
-              <div class="inner" data-reorder="1,0">
-                <div><h2 id="text02">Miniaturas</h2></div>
+              <div class="inner">
                 <div>
                   <div id="image07" class="image">
                     <span class="frame"
@@ -5226,6 +5138,8 @@
                     /></span>
                   </div>
                 </div>
+                <div><h2 id="text02">Miniaturas</h2></div>
+                
               </div>
             </div>
           </div>
@@ -5644,7 +5558,7 @@
         }
         (function () {
           var breakpoints = {
-              small: "(max-width: 736px)",
+              small: "(max-width: 850px)",
               medium: "(max-width: 980px)",
             },
             elements = $$("[data-reorder]");
