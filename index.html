@@ -4671,7 +4671,17 @@
         }
       }
       
-       .youtube-player {
+    .youtube-player {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 5px;
+  }
+
+  .miniatura {
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
@@ -4692,7 +4702,37 @@
 
   }
 
+  .miniatura iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: transparent;
+
+  }
+
   .youtube-player img {
+    object-fit: cover;
+    display: block;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 106%;
+    width: 106%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    height: auto;
+    cursor: pointer;
+    -webkit-transition: 0.4s all;
+    -moz-transition: 0.4s all;
+    transition: 0.4s all;
+  }
+
+  .miniatura img{
     object-fit: cover;
     display: block;
     left: 0;
@@ -5164,21 +5204,21 @@
             <div class="wrapper">
               <div class="inner">
                 <div>
-                  <div id="image03" class="images" >
+                  <div class="miniatura" >
                     <span class="frame"
                       ><img src="//i.ytimg.com/vi/52xjeQavZ38/hqdefault.jpg" alt=""
                     /></span>
                   </div>
                 </div>
                 <div>
-                  <div id="image03" class="images">
+                  <div class="miniatura">
                     <span class="frame"
                       ><img src="//i.ytimg.com/vi/52xjeQavZ38/hqdefault.jpg" alt=""
                     /></span>
                   </div>
                 </div>
                 <div>
-                  <div id="image03" class="images">
+                  <div class="miniatura">
                     <span class="frame"
                       ><img src="//i.ytimg.com/vi/52xjeQavZ38/hqdefault.jpg" alt=""
                     /></span>
