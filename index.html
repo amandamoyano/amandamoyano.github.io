@@ -2906,7 +2906,7 @@
         font-family: "Arial", sans-serif;
         letter-spacing: 0.025rem;
         padding-left: calc(0.025rem + 1.25rem);
-        font-size: 1em;
+        font-size: 1em;media
         font-weight: 400;
         border-radius: 1rem;
         transition: transform 0.25s ease, color 0.25s ease,
@@ -4896,6 +4896,11 @@
         #container12 > .wrapper > .inner {
           --spacing: 0rem;
         }
+        .responsivebuttons {
+          width: 100%;
+          height: auto;
+          position:relative;
+        }
         #buttons01 {
           flex-direction: column;
           flex-wrap: nowrap;
@@ -4903,6 +4908,9 @@
         #buttons01 li a {
           max-width: 32rem;
           width: 100%;
+        }
+        #buttons01 .label {
+          display: none;
         }
         #buttons02 {
           flex-direction: column;
@@ -5152,6 +5160,13 @@
         .responsive {
           width: 100%;
           height: auto;
+          
+        }
+
+        .responsivebuttons {
+          width: 100%;
+          height: auto;
+          position:absolute;
         }
       </style></noscript
     >
@@ -5209,7 +5224,7 @@
             <div class="wrapper">
               <div class="inner" data-reorder="1,0">
                 <div><h1 id="text03">Hola.</h1></div>
-                <div class="responsive">
+                <div class="responsivebuttons">
                   <ul id="buttons01" class="buttons">
                     <li>
                       <a href="https://www.instagram.com/121.mp4/" target="_blank" class="button n01"
