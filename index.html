@@ -3428,7 +3428,7 @@
           padding-top: 0 !important;
         }
         #container12.columns > .wrapper > .inner > * {
-          padding: calc(var(--gutters) * 0.5) 0 !important;
+          padding: calc(var(--gutters) * 0.9) 0 !important;
         }
         #container12.columns > .wrapper > .inner > *:last-child {
           padding-bottom: 0 !important;
@@ -4888,7 +4888,35 @@
         #buttons02 li a svg {
           width: 1.625em;
         }
+        .responsivebuttons {
+          width: 100%;
+          height: auto;
+          position:absolute;
+        }
       }
+      @media (max-width: 670px) {
+        #buttons01 .label {
+          display: none;
+        }
+
+        #buttons01 {
+          display:inline-block;
+          margin-left: auto;
+          margin-right: auto;
+          clear: both;
+          text-align: center;
+          float: none;
+        }
+
+        .responsivebuttons {
+          width: 100%;
+          height: auto;
+          position:relative;
+          text-align: center
+        }
+
+      }
+      
       @media (max-width: 480px) {
         #main > .inner {
           --spacing: 2.625rem;
@@ -4909,9 +4937,7 @@
           max-width: 32rem;
           width: 100%;
         }
-        #buttons01 .label {
-          display: none;
-        }
+        
         #buttons02 {
           flex-direction: column;
           flex-wrap: nowrap;
