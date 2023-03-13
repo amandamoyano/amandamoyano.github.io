@@ -2869,9 +2869,21 @@
       #container05 > .wrapper > .inner > :nth-child(3) {
         width: calc(33.33333% + (var(--gutters) / 3));
       }
-      .footerinfo a svg{
+      .footerinfo svg{
         display: block;
         fill: #ffffff;
+        flex-grow: 0;
+        flex-shrink: 0;
+        height: 100%;
+        width: 1.625em;
+        margin-left: -0.125em;
+        margin-right: 0.3rem;
+        transition: fill 0.25s ease;
+      }
+
+      .footerinfo a {
+        display: block;
+        color: #ffffff;
         flex-grow: 0;
         flex-shrink: 0;
         height: 100%;
