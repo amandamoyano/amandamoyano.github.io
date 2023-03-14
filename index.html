@@ -285,7 +285,7 @@
       #main > .inner {
         --padding-horizontal: 4rem;
         --padding-vertical: 0.625rem;
-        --spacing: 4rem;
+        --spacing: 3rem;
         --width: 100vw;
         border-radius: var(--border-radius-tl) var(--border-radius-tr)
           var(--border-radius-br) var(--border-radius-bl);
@@ -2910,6 +2910,18 @@
         white-space: nowrap;
       }
       
+      #buttons04 a svg {
+        display: block;
+        fill: #ffffff;
+        flex-grow: 0;
+        flex-shrink: 0;
+        height: 100%;
+        min-width: 16px;
+        width: 1.625em;
+        margin-left: -0.125em;
+        margin-right: calc(0.625rem + 0.025rem);
+        transition: fill 0.25s ease;
+      }
     
       #buttons04 span.p:nth-child(n + 2) {
         margin-top: 1rem;
