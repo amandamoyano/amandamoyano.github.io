@@ -174,11 +174,14 @@
       *:after {
         box-sizing: border-box;
       }
+      html {
+          margin:    0 auto;
+          max-width: 1920px;
+      }
       body {
         line-height: 1;
         min-height: var(--viewport-height);
         min-width: 320px;
-        max-width: 1920px;
         overflow-x: hidden;
         word-wrap: break-word;
         background-color: #ffffff;
@@ -2942,7 +2945,7 @@
         width:fit-content;
         
         line-height: 2.5rem;
-        padding: 0 1.25rem;
+        padding: 0.5rem;
         border-radius: 1rem;
         transition: transform 0.25s ease, color 0.25s ease,
           background-color 0.25s ease, border-color 0.25s ease;
