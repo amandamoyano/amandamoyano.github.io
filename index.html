@@ -2924,20 +2924,23 @@
         font-size: 1em;
         line-height: 1.75;
         font-weight: 400;
+        height: 2.5rem;
       }
 
       #buttons04 a .label {
         direction: var(--site-language-direction);
         overflow: hidden;
         text-overflow: ellipsis;
+        text-decoration: none;
       }
       #buttons04 .button {
+        text-decoration: none;
         background-color: #4d4168;
         color: #ffffff;
         letter-spacing: 0.025rem;
         padding-left: calc(0.025rem + 1.25rem);
         width:fit-content;
-        height: 2.5rem;
+        
         line-height: 2.5rem;
         padding: 0 1.25rem;
         border-radius: 1rem;
@@ -2949,6 +2952,18 @@
       }
       #buttons04 a:hover {
         transform: scale(1.1125);
+      }
+      #buttons01 a svg {
+        display: block;
+        fill: #ffffff;
+        flex-grow: 0;
+        flex-shrink: 0;
+        height: 100%;
+        min-width: 16px;
+        width: 1.625em;
+        margin-left: -0.125em;
+        margin-right: calc(0.625rem + 0.025rem);
+        transition: fill 0.25s ease;
       }
      
       #buttons01 {
@@ -6286,6 +6301,8 @@
       <div id="container02" class="container columns">
         <div class="wrapper">
           <div class="inner">
+
+            
 
             <div class="responsive">
               <ul id="buttons02" class="buttons">
