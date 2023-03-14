@@ -2956,6 +2956,56 @@
       #buttons01 li a:hover {
         transform: scale(1.1125);
       }
+      #buttons03 {
+        justify-content: flex-end;
+        gap: 0rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position:absolute;
+      }
+      #buttons03 li a {
+        display: inline-flex;
+        width: auto;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        padding: 0 1.25rem;
+        vertical-align: middle;
+        font-family: "Arial", sans-serif;
+        letter-spacing: 0.025rem;
+        padding-left: calc(0.025rem + 1.25rem);
+        font-size: 1em;media
+        font-weight: 400;
+        border-radius: 1rem;
+        transition: transform 0.25s ease, color 0.25s ease,
+          background-color 0.25s ease, border-color 0.25s ease;
+      }
+      #buttons03 li a svg {
+        display: block;
+        fill: #ffffff;
+        flex-grow: 0;
+        flex-shrink: 0;
+        height: 100%;
+        min-width: 16px;
+        width: 1.625em;
+        margin-left: -0.125em;
+        margin-right: calc(0.625rem + 0.025rem);
+        transition: fill 0.25s ease;
+      }
+      #buttons03 li a .label {
+        direction: var(--site-language-direction);
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      #buttons03 .button {
+        background-color: #4d4168;
+        color: #ffffff;
+      }
+      #buttons03 .button:hover {
+        background-color: #631818 !important;
+      }
+      #buttons03 li a:hover {
+        transform: scale(1.1125);
+      }
       #buttons02 {
         justify-content: flex-end;
         gap: 0rem;
@@ -4879,6 +4929,11 @@
           min-height: 100% !important;
           width: 100% !important;
         }
+        .responsivebuttons1 {
+          width: 100%;
+          height: auto;
+          position:relative;
+        }
         #buttons01 {
           gap: 0rem;
         }
@@ -4888,6 +4943,17 @@
           font-size: 1em;
         }
         #buttons01 li a svg {
+          width: 1.625em;
+        }
+        #buttons03 {
+          gap: 0rem;
+        }
+        #buttons03 li a {
+          letter-spacing: 0.025rem;
+          padding-left: calc(0.025rem + 1.25rem);
+          font-size: 1em;
+        }
+        #buttons03 li a svg {
           width: 1.625em;
         }
         #buttons02 {
@@ -4912,6 +4978,7 @@
           height: auto;
           position:absolute;
         }
+        
 
         .miniatura{
           max-width: ;
@@ -4947,6 +5014,14 @@
           flex-wrap: nowrap;
         }
         #buttons01 li a {
+          max-width: 32rem;
+          width: 100%;
+        }
+        #buttons03 {
+          flex-direction: column;
+          flex-wrap: nowrap;
+        }
+        #buttons03 li a {
           max-width: 32rem;
           width: 100%;
         }
@@ -5429,6 +5504,21 @@
                      
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="container15" class="container default">
+            <div class="wrapper">
+              <div class="inner">
+                <div class="responsivebuttons1">
+                  <ul id="buttons03" class="buttons">
+                    <li>
+                      <a href="https://www.youtube.com/playlist?list=PLx6ZTzR8J_y7OZzHGVJgmxSWhTFyH3iqn" target="_blank" class="button n01"
+                        ><span class="label">+ VÍDEOS</span></a
+                      >
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
