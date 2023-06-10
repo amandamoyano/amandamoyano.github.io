@@ -5444,6 +5444,59 @@
         display: none;
         }
 
+                /* The dropdown container */
+        .dropdown {
+        float: left;
+        overflow: hidden;
+        }
+
+        /* Dropdown button */
+        .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin: 0; /* Important for vertical align on mobile phones */
+        }
+
+        /* Add a red background color to navbar links on hover */
+        .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: red;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        }
+
+        /* Add a grey background color to dropdown links on hover */
+        .dropdown-content a:hover {
+        background-color: #ddd;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+
         
       </style></noscript
     >
@@ -5567,9 +5620,50 @@
           </div>
 
           <div class="topnav" id="myTopnav">
-            <a href="#" class="active">Edición en redes</a>
-            <a href="#">Montaje de vídeos</a>
+
+            <a href="#" class="active">Inicio</a>
+            
+            <div class="dropdown">
+                <button class="dropbtn">Edición en redes
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Educativo</a>
+                  <a href="#">Vlogs</a>
+                  <a href="#">Viajes</a>
+                  <a href="#">DIYs</a>
+                  <a href="#">Formato corto</a>
+                  <a href="#">Entrevistas</a>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <button class="dropbtn">Montaje de vídeos
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Cinematográfico</a>
+                  <a href="#">Videoclip</a>
+                  <a href="#">Publicidad</a>
+                </div>
+              </div>
+
             <a href="#">Dirección artística</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">Diseño gráfico
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Motion Graphics</a>
+                  <a href="#">Animaciones</a>
+                  <a href="#">Miniaturas</a>
+                  <a href="#">Channel Art</a>
+                </div>
+              </div>
+
+
+
             <a href="#">Trabajar conmigo</a>
             <a href="#">Contacto</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -6121,11 +6215,21 @@
     <script>
 
         function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
             var x = document.getElementById("myTopnav");
             if (x.className === "topnav") {
               x.className += " responsive";
             } else {
               x.className = "topnav";
+            }
+          }
+
+          window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+              if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+              }
             }
           }
 
